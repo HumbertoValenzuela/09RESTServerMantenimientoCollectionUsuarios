@@ -99,3 +99,14 @@
 // Manejar el estado true mostrar false no mostrar
 // Pero seguirá estando el registro en la bd para seguir teniendo la integridad referencial
 // Modificar el GET usuario y que muestre el listado con el filtro estado: true
+
+// https://intense-springs-10581.herokuapp.com/ | https://git.heroku.com/intense-springs-10581.git
+// https://intense-springs-10581.herokuapp.com/
+
+// 113 Variables de entorno personalizadas Heroku
+// heroku config para ver las veriables de entorno
+// heroku config: set nombre="humberto" crear una variable de entorno
+// heroku config ver las variables de entorno
+// heroku config: set nombre para ver la variable de entorno
+// heroku config:unset nombre para borrar una variable de entorno
+// La idea es proteger el DB_CNN
