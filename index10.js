@@ -59,3 +59,15 @@ const { response } = require("./server/routes/usuario");
 // } else {
 //     console.log('No se actualizo el token');
 // }
+
+// 127 Desplegar en Heroku y backups en GitHub - Sección 10
+// git status
+// git add .
+//  git commit -m "login"
+// git push
+// git push heroku master
+// heroku open
+
+// git tag
+// git tag -a v.0.1.0 -m "Login y token"
+// git push tags
