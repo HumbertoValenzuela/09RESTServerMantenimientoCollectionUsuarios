@@ -66,3 +66,19 @@
 // clic en la carpeta 08RESTServerConfiginiciales - sección derecha documentation - 
 // View complete collection documentation
 // botón publish - se abrirá una página web - boton publish
+
+// 137 Publicar a Heroku y GitHub - Y pruebas en producción
+// git status
+// git add .
+// git commit -m "Google Sing-in"
+// git push 
+// git push heroku master
+// En google
+// https://console.cloud.google.com/apis/credentials/oauthclient/904817232097-ilv364veqeclfajgoqvhh6dd1l0vj68q.apps.googleusercontent.com?project=valued-night-333102
+// Credenciales - Agregar URI - https://intense-springs-10581.herokuapp.com/
+// tendría entonces una para localhost y otra para heroku
+
+// {
+//   "error": "idpiframe_initialization_failed",
+//   "details": "Not a valid origin for the client: https://intense-springs-10581.herokuapp.com has not been registered for client ID 904817232097-ilv364veqeclfajgoqvhh6dd1l0vj68q.apps.googleusercontent.com. Please go to https://console.developers.google.com/ and register this origin for your project's client ID."
+// }
