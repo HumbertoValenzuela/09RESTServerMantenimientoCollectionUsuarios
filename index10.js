@@ -1,7 +1,8 @@
 // 120 Ordenando las rutas en nuestro servidor
 // Configuración a que cargue todas las rutas
 
-const { response } = require("./server/routes/usuario");
+// const { response } = require("./server/routes/usuario");
+
 
 // 121 Login de usuario
 // request.body
@@ -70,4 +71,4 @@ const { response } = require("./server/routes/usuario");
 
 // git tag
 // git tag -a v.0.1.0 -m "Login y token"
-// git push tags
+// git push --tags
