@@ -80,11 +80,11 @@ async function verify( token) {
 }
 
 
-
 app.post('/google', async( request, respond ) => {
 
   let token = request.body.idtoken;
   let googleUser = await verify( token ) 
+  
     .catch( error => {
       return respond.status(403).json( {
         ok: false,
@@ -93,7 +93,7 @@ app.post('/google', async( request, respond ) => {
         }
       });
     });
-
+  
   // Verificar si el usuario existe en la base de datos
   Usuario.findOne( { email: googleUser.email }, ( err, usuarioDB ) => {
 
@@ -134,7 +134,7 @@ app.post('/google', async( request, respond ) => {
     } else {
       // Si el usuario no existe en la base de datos
       let usuario = new Usuario();
-      usuario.nomre = googleUser.nombre;
+      usuario.nombre = googleUser.nombre;
       usuario.email = googleUser.email;
       usuario.img = googleUser.img;
       usuario.google = true;
