@@ -132,3 +132,6 @@
 // En GitHub crear el Realease
 // git push heroku master
 // Probar en PostMan - Producción
+// Nota importante:
+// Heroku no crea las carpetas si estan vacias
+// Uploads/usuarios y productos debe contener algo
