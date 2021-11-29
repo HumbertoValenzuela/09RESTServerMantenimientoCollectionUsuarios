@@ -43,7 +43,7 @@ let usuarioSchema = new Schema({
 });
 
 //El método toJSON siempre se llama cuando se intenta imprimir como el post
-usuarioSchema.methods.toJSON = function() {//funtion porque se necesita el this
+usuarioSchema.methods.toJSON = function() {//function porque se necesita el this
   let user = this;//this lo quese a que tenga en el momento
   let userObject = user.toObject();//se tiene todas las propiedades y métodos
 

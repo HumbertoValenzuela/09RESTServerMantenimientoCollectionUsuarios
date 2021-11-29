@@ -30,6 +30,27 @@ let verificaToken = ( request, respond, next ) => {
 
 };
 
+let verificaTokenImagen = ( request, respond, next ) => {
+
+  // token por query
+  let token = request.query.token;
+
+  jwt.verify( token, process.env.SECRETORPRIVATEKEY, ( err, decoded ) => {
+
+    if ( err ) {
+      return respond.status(401).json( { 
+        ok: false,
+        err
+      } );
+    }
+
+    // request.usuario = decoded.usuario;
+
+    next();
+  });
+};
+
+
 // Verifica ADMIN_ROLE
 let verificaAdmin_Role = ( request, respond, next ) => {
 
@@ -53,5 +74,6 @@ let verificaAdmin_Role = ( request, respond, next ) => {
 // anfn arrow function
 module.exports = {
   verificaToken,
-  verificaAdmin_Role
+  verificaAdmin_Role,
+  verificaTokenImagen
 }
