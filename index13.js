@@ -126,4 +126,9 @@
 // git status
 // git commit -m "Manejo de archivos fs path"
 // git push
+// git tag
+// git tag -a v1.0.0 -m "Manejo de archivos fs path"
+// git push --tag
+// En GitHub crear el Realease
 // git push heroku master
+// Probar en PostMan - Producción
